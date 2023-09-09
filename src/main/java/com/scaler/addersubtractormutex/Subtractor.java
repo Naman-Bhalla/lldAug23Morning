@@ -16,6 +16,14 @@ public class Subtractor implements Callable<Void> {
     public Void call() throws Exception {
 
         for (int i = 1; i <= 50; ++i) {
+            //
+            //
+            ///
+
+            ///
+            ///
+
+            ///
             lock.lock();
             this.v.value -= i;
             System.out.println("Subtracting " + i);
