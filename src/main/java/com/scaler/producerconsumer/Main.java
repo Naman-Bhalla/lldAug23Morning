@@ -1,5 +1,6 @@
 package com.scaler.producerconsumer;
 
+import java.util.Map;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -15,5 +16,8 @@ public class Main {
         for (int i = 1; i <= 20; ++i) {
             es.execute(new Consumer(store));
         }
+
+//        Object obj = new Main();
+//        Map
     }
 }
