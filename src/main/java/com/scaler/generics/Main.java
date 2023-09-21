@@ -33,8 +33,14 @@ public class Main {
         a1.name = "Naman";
         Animal a2 = new Animal();
         a2.name = "Amit";
-        Dog a3 = new Dog();
+        Animal a3 = new Dog();
         a3.name = "XYZ";
+        ArrayList<Animal> animalsList = new ArrayList<>();
+        animalsList.add(a3);
+
+        for (Animal a: animalsList) {
+            System.out.println(a.name);
+        }
 
         animalCounts.printMoreFirsts(
                 List.of(a1, a2, a3)
@@ -48,7 +54,7 @@ public class Main {
 
 
         List<Dog> dogs = new ArrayList<>();
-        dogs.add(a3);
+//        dogs.add(a3);
         dogs.add(a4);
         dogs.add(a5);
 

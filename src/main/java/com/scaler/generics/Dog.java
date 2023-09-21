@@ -12,4 +12,9 @@ public class Dog extends Animal{
                 ", weight=" + weight +
                 '}';
     }
+
+    @Override
+    public void hey() {
+        System.out.println("Hey Dog");
+    }
 }

@@ -13,4 +13,8 @@ public class Animal {
                 ", weight=" + weight +
                 '}';
     }
+
+    public void hey() {
+        System.out.println("hey");
+    }
 }
