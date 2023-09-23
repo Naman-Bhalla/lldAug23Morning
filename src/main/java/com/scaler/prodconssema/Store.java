@@ -5,11 +5,11 @@ import java.util.concurrent.ConcurrentLinkedDeque;
 
 public class Store {
     private int maxSize;
-    private ConcurrentLinkedDeque<Object> items;
+    private Vector<Object> items;
 
     public Store(int maxSize){
         this.maxSize = maxSize;
-        this.items = new ConcurrentLinkedDeque<>();
+        this.items = new Vector<>();
     }
 
     public int getMaxSize() {
@@ -34,7 +34,7 @@ public class Store {
     }
 
     public void removeItem() {
-        this.items.remove();
+        this.items.remove(0);
         System.out.println("Item Consumed. New Count: " + this.items.size());
     }
 }
