@@ -7,6 +7,10 @@ public class Student {//implements Comparable<Student> {
     String name;
     double psp;
 
+    public double getPsp() {
+        return psp;
+    }
+
     public Student(int id, int age, String name, double psp) {
         this.id = id;
         this.age = age;
