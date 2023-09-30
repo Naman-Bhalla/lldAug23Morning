@@ -10,6 +10,7 @@ public class Main {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         Value v = new Value();
         Lock l = new ReentrantLock();
+        String myName = "Naman";
 //        AtomicReference<Integer> a = new AtomicReference<>(21);
 //        Adder a = new Adder(v);
 //        List<Integer> l = new ArrayList<>();
